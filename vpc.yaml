@@ -1,0 +1,11 @@
+Resources:
+  MainVpc:
+    Type: AWS::EC2::VPC
+    Properties:
+      CidrBlock: 172.16.0.0/16
+
+Outputs:
+  MainVpc:
+    Value: !Ref MainVpc
+    Export:
+      Name: main-vpc-id
